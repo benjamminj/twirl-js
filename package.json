@@ -2,10 +2,8 @@
   "name": "css-literal",
   "version": "0.0.1",
   "description": "Write CSS objects as template literals",
-  "main": "index.js",
-  "scripts": {
-    "test": "ava"
-  },
+  "main": "dist/index.js",
+  "jsnext:main": "src/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/benjaminj6/css-literal.git"
@@ -24,8 +22,21 @@
   "homepage": "https://github.com/benjaminj6/css-literal#readme",
   "devDependencies": {
     "ava": "^0.19.1",
-    "buble": "^0.15.2",
+    "babel-preset-env": "^1.5.1",
+    "babel-register": "^6.24.1",
     "prettier": "^1.4.2",
     "rollup": "^0.42.0"
+  },
+  "babel": {
+    "presets": ["env"]
+  },
+  "ava": {
+    "require": ["babel-register"],
+    "babel": "inherit"
+  },
+  "scripts": {
+    "format": "prettier src/**/*.js",
+    "build": "rollup -n css-literal -f umd -i src/index.js -o dist/index.js",
+    "test": "ava"
   }
 }
