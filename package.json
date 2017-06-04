@@ -1,0 +1,31 @@
+{
+  "name": "css-literal",
+  "version": "0.0.1",
+  "description": "Write CSS objects as template literals",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjaminj6/css-literal.git"
+  },
+  "keywords": [
+    "css-in-js",
+    "css",
+    "template-literal",
+    "javascript"
+  ],
+  "author": "Benjamin Johnson <benjamin.d.johnson@icloud.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benjaminj6/css-literal/issues"
+  },
+  "homepage": "https://github.com/benjaminj6/css-literal#readme",
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "buble": "^0.15.2",
+    "prettier": "^1.4.2",
+    "rollup": "^0.42.0"
+  }
+}

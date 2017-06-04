@@ -1,0 +1,12 @@
+# IDE
+.vscode
+
+# dependencies
+node_modules
+
+# build
+dist
+
+# misc
+sandbox
+**.todo**
