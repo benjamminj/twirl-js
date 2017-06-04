@@ -24,19 +24,25 @@
     "ava": "^0.19.1",
     "babel-preset-env": "^1.5.1",
     "babel-register": "^6.24.1",
+    "nyc": "^11.0.2",
     "prettier": "^1.4.2",
     "rollup": "^0.42.0"
   },
   "babel": {
-    "presets": ["env"]
+    "presets": [
+      "env"
+    ]
   },
   "ava": {
-    "require": ["babel-register"],
+    "require": [
+      "babel-register"
+    ],
     "babel": "inherit"
   },
   "scripts": {
-    "format": "prettier src/**/*.js",
+    "format": "prettier src/**/*.js --semi=false --single-quote --write",
     "build": "rollup -n css-literal -f umd -i src/index.js -o dist/index.js",
-    "test": "ava"
+    "test": "ava",
+    "coverage": "nyc -a -r text npm test"
   }
 }

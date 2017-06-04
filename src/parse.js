@@ -4,10 +4,10 @@ export default (strings, ...args) => {
     if (args[i]) {
       if (typeof args[i] === 'number') args[i] = args[i].toString()
 
-      return acc.concat([ string, args[i] ])
+      return acc.concat([string, args[i]])
     }
 
-    return acc.concat([ string ])
+    return acc.concat([string])
   }, [])
 
   // transform the array into an array of css rules, one per string
