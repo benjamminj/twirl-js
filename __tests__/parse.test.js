@@ -54,3 +54,14 @@ test(
     obj: { background: 'blue', color: 'black' }
   })
 )
+
+test(
+  'should handle css props with hyphens',
+  parsingTest({
+    css: parse`
+      background-color: blue
+      text-align: center
+    `,
+    obj: { 'background-color': 'blue', 'text-align': 'center' }
+  })
+)

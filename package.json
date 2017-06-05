@@ -42,7 +42,7 @@
   "scripts": {
     "format": "prettier src/**/*.js --semi=false --single-quote --write",
     "build": "rollup -n css-literal -f umd -i src/index.js -o dist/index.js",
-    "test": "ava",
+    "test": "ava -w",
     "coverage": "nyc -a -r text npm test"
   }
 }
