@@ -1,17 +1,16 @@
 export default (strings, ...args) => {
   // merge all of the evaluated values from the template literal
   const evaluated = strings.reduce((acc, string, i) => {
-    if (args[i]) {
-      if (typeof args[i] === 'number') args[i] = args[i].toString()
+    acc.push(string)
 
-      return acc.concat([string, args[i]])
-    }
+    if (args[i]) acc.push(args[i].toString())
 
-    return acc.concat([string])
+    return acc
   }, [])
 
   // transform the array into an array of css rules, one per string
-  const rules = evaluated.join('').replace(/ /g, '').split(/;\n|;|\n/)
+  const rules = evaluated.join('').replace(/ /g, '').split(/;|\n/)
+  console.log(rules)
 
   // transform the rules array into an object literal
   return rules.reduce((acc, rule) => {
