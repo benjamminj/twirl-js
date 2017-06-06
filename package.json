@@ -1,5 +1,5 @@
 {
-  "name": "css-literal",
+  "name": "twirl-js",
   "version": "0.0.1",
   "description": "Write CSS objects as template literals",
   "main": "dist/index.js",
