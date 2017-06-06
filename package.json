@@ -44,7 +44,7 @@
     "build": "BABEL_ENV=build rollup -c",
     "test": "BABEL_ENV=test ava",
     "coverage": "nyc -a npm test",
-    "prepublish": "npm run build && npm run test",
-    "publish": "npm version patch && npm publish"
+    "prepare": "npm run build && npm run test",
+    "release": "npm version patch && npm publish"
   }
 }
