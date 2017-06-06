@@ -1,6 +1,6 @@
 {
   "name": "twirl-js",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Write CSS objects as template literals",
   "main": "dist/index.js",
   "jsnext:main": "src/index.js",
