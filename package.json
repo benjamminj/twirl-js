@@ -4,6 +4,7 @@
   "description": "Write CSS objects as template literals",
   "main": "dist/index.js",
   "jsnext:main": "src/index.js",
+  "files": ["dist"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/benjaminj6/twirl-js.git"
@@ -40,6 +41,8 @@
     "format": "prettier src/**/*.js --semi=false --single-quote --write",
     "build": "BABEL_ENV=build rollup -c",
     "test": "BABEL_ENV=test ava",
-    "coverage": "nyc -a npm test"
+    "coverage": "nyc -a npm test",
+    "prepublish": "npm run build && npm run test",
+    "publish": "git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
   }
 }
