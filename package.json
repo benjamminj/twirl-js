@@ -30,11 +30,6 @@
     "rollup": "^0.42.0",
     "rollup-plugin-babel": "^2.7.1"
   },
-  "babel": {
-    "presets": [
-      "env"
-    ]
-  },
   "ava": {
     "require": [
       "babel-register"
@@ -43,8 +38,8 @@
   },
   "scripts": {
     "format": "prettier src/**/*.js --semi=false --single-quote --write",
-    "build": "rollup -c",
-    "test": "ava",
+    "build": "BABEL_ENV=build rollup -c",
+    "test": "BABEL_ENV=test ava",
     "coverage": "nyc -a npm test"
   }
 }
