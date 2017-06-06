@@ -8,5 +8,5 @@ before_install:
   - npm i -g codecov
 
 script:
-  - npm t
+  - npm run coverage
   - codecov

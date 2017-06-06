@@ -10,7 +10,6 @@ export default (strings, ...args) => {
 
   // transform the array into an array of css rules, one per string
   const rules = evaluated.join('').replace(/ /g, '').split(/;|\n/)
-  console.log(rules)
 
   // transform the rules array into an object literal
   return rules.reduce((acc, rule) => {
