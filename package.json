@@ -1,6 +1,10 @@
 {
   "name": "twirl-js",
+<<<<<<< HEAD
   "version": "0.0.9",
+=======
+  "version": "0.0.4",
+>>>>>>> eb73d4077c1a8fed48a1df5d4fed498aa81ebf97
   "description": "Write CSS objects as template literals",
   "main": "dist/index.js",
   "jsnext:main": "src/index.js",
@@ -44,7 +48,12 @@
     "build": "BABEL_ENV=build rollup -c",
     "test": "BABEL_ENV=test ava",
     "coverage": "nyc -a npm test",
+<<<<<<< HEAD
     "prepare": "npm run build && npm run test",
     "release": "npm version patch && npm publish"
+=======
+    "prepublish": "npm run build && npm run test",
+    "publish": "git commit -am $npm_package_version && git push && npm publish"
+>>>>>>> eb73d4077c1a8fed48a1df5d4fed498aa81ebf97
   }
 }

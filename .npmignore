@@ -1,0 +1,13 @@
+# IDE
+.vscode
+
+# dependencies
+node_modules
+
+# coverage
+.nyc_output
+coverage
+
+# misc
+sandbox
+**.todo**
