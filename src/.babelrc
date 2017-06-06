@@ -1,0 +1,11 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": "0.10.0"
+      },
+      "modules": false
+    }]
+  ],
+  "plugins": ["external-helpers"]
+}
