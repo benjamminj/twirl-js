@@ -6,7 +6,7 @@
   "jsnext:main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/benjaminj6/css-literal.git"
+    "url": "git+https://github.com/benjaminj6/twirl-js.git"
   },
   "keywords": [
     "css-in-js",
@@ -17,9 +17,9 @@
   "author": "Benjamin Johnson <benjamin.d.johnson@icloud.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/benjaminj6/css-literal/issues"
+    "url": "https://github.com/benjaminj6/twirl-js/issues"
   },
-  "homepage": "https://github.com/benjaminj6/css-literal#readme",
+  "homepage": "https://github.com/benjaminj6/twirl-js#readme",
   "devDependencies": {
     "ava": "^0.19.1",
     "babel-plugin-external-helpers": "^6.22.0",
